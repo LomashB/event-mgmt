@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+*{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +44,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main{
+  /* min-height: 85vh; */
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1714149e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*::selection{
+  background-color: rgba(255, 166, 0, 0.447);
+  color: white ;
 }
