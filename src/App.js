@@ -1,12 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './components/Home';
-import Event from './components/event'
-import About from './components/about'
-import Header from './components/header'
-import Footer from './components/footer'
-import Contact from './components/contact'
-import Gallery from './components/gallery'
+import About from './components/about';
+import Event from './components/event';
+import Header from './components/header';
+import Footer from './components/footer';
+import Contact from './components/contact'; 
+import Gallery from './components/gallery';
 const App = () => (
   <Router>
     <Header />

@@ -102,7 +102,7 @@
 }
 
 .w40{
-    width: 40%;
+    width: 60%;
 }
 
 .flex2{
@@ -154,8 +154,9 @@
     width: 90vw;
     margin: auto;
     display: flex;
-    gap: 15%;
+    gap: 10%;
     margin-block: 15vh;
+    align-content: center;
 }
 
 .desc-sec-1{
@@ -233,6 +234,17 @@
     border: none;
     font-weight: 600;
     font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.get-start-section button:hover{
+    color: black;
+    background-color: #7f9dde;
+    
+}
+
+button:hover{
+    transform: scale(1.05);
 }
 
 @media screen and (max-width:1000px) {
@@ -324,6 +336,7 @@
 @media screen and (max-width:500px){
     .desc-section{
         flex-direction: column;
+        margin-bottom: 2vh;
     }
     .desc-sec-1{
         width: 90%;
@@ -355,6 +368,8 @@
     .company-section{
         flex-wrap: wrap;
         gap: 10px;
+        row-gap: 20px;
+        justify-content: space-evenly;
     }
     .image-section-text input {
         width: 90%;
