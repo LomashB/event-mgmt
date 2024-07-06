@@ -12,7 +12,7 @@ const login = () => {
           <h2>Log In</h2>
           <input type="text" placeholder="Id"></input>
           <input type="password" placeholder="Password"></input>
-          <button>SEND</button>
+          <button>LOGIN</button>
           <Link  className='signup' to="/signup">Create a new Account</Link>
         </div>
       </div>
