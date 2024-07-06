@@ -2,7 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/about';
-import Event from './components/event';
+import EventList from './components/eventlist';
+import EventDetail from './components/eventdetail';
 import Header from './components/header';
 import Footer from './components/footer';
 import Contact from './components/contact'; 
@@ -17,14 +18,15 @@ const App = () => (
     <main className='main'>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/events/:eventId" element={<Event />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/home" element={<Home />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
 
+      <Route path="/events" element={<EventList />} />
+      <Route path="/event/:eventId" element={<EventDetail />} />
       {/* Add more routes here */}
 
     </Routes>
