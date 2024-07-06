@@ -33,7 +33,9 @@ const Header = () => {
           <li><Link to="/contact">CONTACT</Link></li>
         </ul>
       </nav>
-      <button className="signin-btn">Sign Up</button>
+      <Link to='/login'>
+      <button className="signin-btn">Log in</button>
+      </Link>
     </header>
   );
 };

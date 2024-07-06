@@ -7,6 +7,10 @@ import Header from './components/header';
 import Footer from './components/footer';
 import Contact from './components/contact'; 
 import Gallery from './components/gallery';
+import Login from './components/login'
+import Signup from './components/signup'
+
+
 const App = () => (
   <Router>
     <Header />
@@ -18,6 +22,8 @@ const App = () => (
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/gallery" element={<Gallery />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
 
       {/* Add more routes here */}
 

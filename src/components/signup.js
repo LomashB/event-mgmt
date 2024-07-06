@@ -1,0 +1,26 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import "./../assets/css/signup.css";
+import lockimg from "./../assets/images/icons8-lock.svg";
+
+const signup = () => {
+  return (
+    <div className="contact-body">
+      <div className="contact-form-body">
+        <div className="contact-form">
+          <img src={lockimg}></img>
+          <h2>Sign Up</h2>
+          <input type="text" placeholder="First Name"></input>
+          <input type="text" placeholder="Last Name"></input>
+          <input type="text" placeholder="Id"></input>
+          <input type="password" placeholder="Password"></input>
+          <input type="password" placeholder="Confirm Password"></input>
+          <button>SEND</button>
+          <Link  className='signup' to="/login">Already have an Account?</Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default signup;

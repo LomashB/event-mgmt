@@ -63,7 +63,11 @@
 }
 
 .about-desc div {
-  color: #c0aa9c;
+  color: #7f9dde;
+}
+
+.about-desc p{
+  color: #7f9dde;
 }
 
 .top-box {
@@ -81,7 +85,7 @@
 }
 
 .fb-box {
-  background-color: #cdc7bf;
+  background-color: #7f9dde;
   width: calc(25% - 20px);
   padding: 15px;
   transition: all o.2s ease-in-out;
@@ -192,7 +196,7 @@
 .img-award p {
   font-size: 15px;
   font-weight: 400;
-  color: #cdc7bf;
+  color: #7f9dde;
 }
 
 .topic-data {

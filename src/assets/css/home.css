@@ -19,10 +19,8 @@
   font-weight: 700;
   background: linear-gradient(
     to right,
-    rgb(255, 174, 0),
-    yellow,
-    #e712ff,
-    rgb(13, 184, 241)
+    rgb(255, 174, 0) 60%,
+    yellow
   );
   -webkit-background-clip: text; /* for Safari */
   -webkit-text-fill-color: transparent; /* for Safari */
@@ -154,13 +152,13 @@
     width: 90vw;
     margin: auto;
     display: flex;
-    gap: 10%;
+    gap: 6%;
     margin-block: 15vh;
     align-content: center;
 }
 
 .desc-sec-1{
-    width: 35%;
+    width: 40%;
     font-size: 30px;
     color: #b0590c;
     font-weight: 600;
@@ -203,7 +201,10 @@
     margin: auto;
     display: flex;
     align-items: center;
-    background-color: #b0590c;
+    /* background-color: #b0590c; */
+    background-image: url(./../images/special-offer-bg.png);
+    background-position: center center;
+    background-size: cover;
     justify-content: space-between;
     padding: 20px 30px;
     border-radius: 20px;
