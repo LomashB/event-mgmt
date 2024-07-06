@@ -4,21 +4,50 @@ import React from "react";
 import { Link } from "react-router-dom"; // Ensure to import Link
 import events from "./eventdata"; // Correct the import path
 import "./../assets/css/eventlist.css";
+
 const EventList = () => {
   return (
     <div className="event-list">
-      <h1>Upcoming Events</h1>
+      <div className="top-sec-breadcrumb">
+        <div>Our Previous Events</div>
+        <div>
+          Harmoni <span>Events</span>
+        </div>
+        <div>Events Page</div>
+      </div>
+
+      <div className="top-sec-types">
+        <p>Categories</p>
+        <ul>
+          <li>Wedding</li>
+          <li>Sports Events</li>
+          <li>Birthday Party</li>
+          <li>Car</li>
+          <li>Bus</li>
+          <li>Call</li>
+          <li>Song</li>
+          <li>Ai </li>
+        </ul>
+      </div>
+
+      <div className="event-item-parent"> 
 
       {events.map((event) => (
         <div key={event.id} className="event-item">
-          <h2>{event.title}</h2>
-          <p>Date: {event.date}</p>
-          <p>Location: {event.location}</p>
-          <p>{event.description}</p>
-          <Link to={`/event/${event.id}`}>View Details</Link>
+          <Link to={`/event/${event.id}`}>
           <img src={event.image}></img>
+          <div className="event-desc">
+          <h2>{event.title}</h2>
+          <p className="event-date">Date: {event.date}</p>
+          <p className="event-location">Location: {event.location}</p>
+          <button>View Details</button>
+          </div>
+          </Link>
         </div>
       ))}
+      </div>
+
+
     </div>
   );
 };

@@ -10,10 +10,12 @@ import Contact from './components/contact';
 import Gallery from './components/gallery';
 import Login from './components/login'
 import Signup from './components/signup'
+import ScrollToTop from './components/scrollToTop';
 
 
 const App = () => (
   <Router>
+    <ScrollToTop />
     <Header />
     <main className='main'>
     <Routes>
