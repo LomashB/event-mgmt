@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import './../assets/css/header.css';
 import logo from './../assets/images/1.site-logo.png';
 import menu from './../assets/images/1.down-arrow.png';
-import profileImg from './../assets/images/pfp.png'; // Add your profile image path
-// import FaBars  from './'; // Uncomment if you need this
+import profileImg from './../assets/images/pfp.png'; 
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +11,6 @@ const Header = () => {
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Check login status from localStorage or state management tool
     const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
     setIsLoggedIn(loggedIn);
   }, []);

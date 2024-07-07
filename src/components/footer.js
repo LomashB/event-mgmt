@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
         </div>
       </div>
-        <p className="footer-end" data-aos="fade-up" data-aos-duration="1500">&copy; 2024 Lomash Bhuva | All rights reserved.</p>
+        <p className="footer-end">&copy; 2024 Lomash Bhuva | All rights reserved.</p>
     </footer>
   );
 };
