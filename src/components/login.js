@@ -12,10 +12,12 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     // Perform login logic
-    if (userId === "test" && password === "test123") {
+    if (userId === "username" && password === "password") {
       localStorage.setItem('isLoggedIn', 'true');
       navigate('/'); // Redirect to home page
-      window.location.reload(); // Refresh to update the header component state
+      window.location.reload(); 
+    alert('you have sucessfully logged in!');
+
     } else {
       alert("Invalid credentials");
     }

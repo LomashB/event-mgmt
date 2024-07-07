@@ -28,6 +28,7 @@ const Header = () => {
   const handleLogout = () => {
     setIsLoggedIn(false);
     localStorage.setItem('isLoggedIn', 'false');
+    alert('you have sucessfully logged out!');
   };
 
   return (
