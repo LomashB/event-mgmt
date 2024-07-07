@@ -7,7 +7,7 @@ const signup = () => {
   return (
     <div className="contact-body">
       <div className="contact-form-body">
-        <div className="contact-form">
+        <div className="contact-form" data-aos="fade-up" data-aos-duration="1500">
           <img src={lockimg}></img>
           <h2>Sign Up</h2>
           <input type="text" placeholder="First Name"></input>

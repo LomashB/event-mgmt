@@ -16,14 +16,14 @@ const EventDetail = () => {
   return (
     <div className="event-detail">
       <div>
-        <div className="event-dtl-img">
+        <div className="event-dtl-img" data-aos="fade-up" data-aos-duration="1500">
           <img
             src={event.image2}
             alt={event.title}
             className="event-detail-image"
           />
         </div>
-        <div className="event-dtl-desc">
+        <div className="event-dtl-desc" data-aos="fade-up" data-aos-duration="1500">
           <h1>{event.title}</h1>
           <div className="date-location">
 
@@ -40,7 +40,7 @@ const EventDetail = () => {
     
 </div>
 
-<div className="get-start-section">
+<div className="get-start-section" data-aos="fade-up" data-aos-duration="1500">
         <div>
         <div>Request Early acess to get started! </div>
         <div>Register today & start exploring the endless possibilities!</div>

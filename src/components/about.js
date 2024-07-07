@@ -5,7 +5,7 @@ import JourneyImg from "./../assets/images/about/company-banner.png";
 const about = () => {
   return (
     <div className="about-body">
-      <div className="top-sec-breadcrumb">
+      <div className="top-sec-breadcrumb" data-aos="fade-up" data-aos-duration="1500">
         <div>all you need to know </div>
         <div>
           about <span>harmoni</span>
@@ -13,7 +13,7 @@ const about = () => {
         <div>About us</div>
       </div>
 
-      <div className="about-desc">
+      <div className="about-desc" data-aos="fade-up" data-aos-duration="1500">
         <div>
           <div>We are Harmoni!</div>
           <h2>No 1 Event Management</h2>
@@ -51,7 +51,7 @@ const about = () => {
         </div>
       </div>
 
-      <div className="img-journey-sec">
+      <div className="img-journey-sec" data-aos="fade-up" data-aos-duration="1500">
         <div className="img-image">
           <img src={JourneyImg}></img>
         </div>
@@ -72,7 +72,7 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data">
+                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -89,7 +89,7 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data">
+                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
                       Lorem ipsum, dolor sit  adipisicing elit.
@@ -106,7 +106,7 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data">
+                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
                       Lorem iit amet conselit.

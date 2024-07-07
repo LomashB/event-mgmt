@@ -1,4 +1,5 @@
 import './App.css';
+import './assets/css/aos.css';
 import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/about';
@@ -11,7 +12,7 @@ import Gallery from './components/gallery';
 import Login from './components/login'
 import Signup from './components/signup'
 import ScrollToTop from './components/scrollToTop';
-
+import Page404 from './components/page404'
 
 const App = () => (
   <Router>
@@ -29,6 +30,8 @@ const App = () => (
 
       <Route path="/events" element={<EventList />} />
       <Route path="/event/:eventId" element={<EventDetail />} />
+
+      <Route path="*" element={<Page404 />}></Route>
       {/* Add more routes here */}
 
     </Routes>

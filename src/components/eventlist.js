@@ -33,7 +33,7 @@ const EventList = () => {
       <div className="event-item-parent"> 
 
       {events.map((event) => (
-        <div key={event.id} className="event-item">
+        <div key={event.id} className="event-item" data-aos="fade-up" data-aos-duration="1500">
           <Link to={`/event/${event.id}`}>
           <img src={event.image}></img>
           <div className="event-desc">

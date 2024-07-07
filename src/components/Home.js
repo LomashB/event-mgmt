@@ -10,8 +10,8 @@ import img4 from "./../assets/images/shopify.png";
 const Home = () => {
   return (
     <div className="home-body">
-      <div className="image-section">
-        <div className="image-section-text">
+      <div className="image-section" >
+        <div className="image-section-text" data-aos="fade-up" data-aos-duration="1500">
           <h2>One Stop Event Planner</h2>
           <p>
             yet bed any for travelling assistance indulgence unpleasing. not
@@ -30,14 +30,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="company-section">
+      <div className="company-section" data-aos="fade-up" data-aos-duration="1500">
         <img src={img1}></img>
         <img src={img2}></img>
         <img src={img3}></img>
         <img src={img4}></img>
       </div>
 
-      <div className="text-section">
+      <div className="text-section" data-aos="fade-up" data-aos-duration="1500">
         <div className="flex1">
           <div className="w40">
             <div className="top-box"></div>
@@ -82,7 +82,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="desc-section">
+      <div className="desc-section" data-aos="fade-up" data-aos-duration="1500">
 
         <div className="desc-sec-1">
           Harmony Event is management firm & wedding planner in the town this is lorem insum text and we can use it anywhere in the clde
@@ -126,7 +126,7 @@ const Home = () => {
 
       </div>
 
-<div className="get-start">
+<div className="get-start" data-aos="fade-up" data-aos-duration="1500">
 
       <div className="get-start-section">
         <div>

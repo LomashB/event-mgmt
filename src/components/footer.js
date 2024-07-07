@@ -5,7 +5,7 @@ import "./../assets/css/footer.css"; // Import CSS for styling
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="footer-main-text">
+      <div className="footer-main-text" data-aos="fade-up" data-aos-duration="1500">
         Do You want to Step into the future of your upcoming event
       </div>
       <button className="footer-btn">Request Early Acess</button>
@@ -43,7 +43,7 @@ const Footer = () => {
             </ul>
         </div>
       </div>
-        <p className="footer-end">&copy; 2024 Lomash Bhuva | All rights reserved.</p>
+        <p className="footer-end" data-aos="fade-up" data-aos-duration="1500">&copy; 2024 Lomash Bhuva | All rights reserved.</p>
     </footer>
   );
 };

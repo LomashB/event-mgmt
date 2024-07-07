@@ -50,10 +50,11 @@
 }
 
 .image-section-text button {
-  padding: 20px 15px;
+  padding: 15px 10px;
   background-color: #b0590c;
   color: #fff;
   width: 30%;
+  border-radius: 5px;
 }
 
 .img-top-sec {
