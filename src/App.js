@@ -13,6 +13,8 @@ import Login from './components/login'
 import Signup from './components/signup'
 import ScrollToTop from './components/scrollToTop';
 import Page404 from './components/page404'
+import MyBookings from './components/mybookings';
+import Profile from './components/profile';
 
 const App = () => (
   <Router>
@@ -27,6 +29,8 @@ const App = () => (
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/mybookings" element={<MyBookings />} />
+      <Route path="/profile" element={<Profile />} />
 
       <Route path="/events" element={<EventList />} />
       <Route path="/event/:eventId" element={<EventDetail />} />
