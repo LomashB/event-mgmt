@@ -51,40 +51,34 @@ const EventList = () => {
             Sports Events
           </li>
           <li
-            onClick={() => handleCategoryClick("Birthday")}
-            className={selectedCategory === "Birthday" ? "selected" : ""}
+            onClick={() => handleCategoryClick("Festival")}
+            className={selectedCategory === "Festival" ? "selected" : ""}
           >
-            Birthday Party
+            Festivals
           </li>
           <li
-            onClick={() => handleCategoryClick("Car")}
-            className={selectedCategory === "Car" ? "selected" : ""}
+            onClick={() => handleCategoryClick("Religious")}
+            className={selectedCategory === "Religious" ? "selected" : ""}
           >
-            Car
+            Religious
           </li>
           <li
-            onClick={() => handleCategoryClick("Bus")}
-            className={selectedCategory === "Bus" ? "selected" : ""}
+            onClick={() => handleCategoryClick("Workshop")}
+            className={selectedCategory === "Workshop" ? "selected" : ""}
           >
-            Bus
+            Workshop
           </li>
           <li
-            onClick={() => handleCategoryClick("Call")}
-            className={selectedCategory === "Call" ? "selected" : ""}
+            onClick={() => handleCategoryClick("Cultural")}
+            className={selectedCategory === "Cultural" ? "selected" : ""}
           >
-            Call
+            Cultural
           </li>
           <li
-            onClick={() => handleCategoryClick("Song")}
-            className={selectedCategory === "Song" ? "selected" : ""}
+            onClick={() => handleCategoryClick("Goa")}
+            className={selectedCategory === "Goa" ? "selected" : ""}
           >
-            Song
-          </li>
-          <li
-            onClick={() => handleCategoryClick("AI")}
-            className={selectedCategory === "AI" ? "selected" : ""}
-          >
-            AI
+            Goa
           </li>
         </ul>
       </div>
