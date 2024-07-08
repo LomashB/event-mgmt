@@ -10,26 +10,14 @@ const EventList = () => {
   return (
     <div className="event-list">
       <div className="top-sec-breadcrumb" data-aos="fade-up" data-aos-duration="1500">
-        <div>Our Previous Events</div>
+        <div>Your Bookings</div>
         <div>
           Harmoni <span>Events</span>
         </div>
         <div>Events Page</div>
       </div>
 
-      <div className="top-sec-types">
-        <p>Categories</p>
-        <ul>
-          <li>Wedding</li>
-          <li>Sports Events</li>
-          <li>Birthday Party</li>
-          <li>Car</li>
-          <li>Bus</li>
-          <li>Call</li>
-          <li>Song</li>
-          <li>Ai </li>
-        </ul>
-      </div>
+    
 
       <div className="event-item-parent"> 
 
