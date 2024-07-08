@@ -4,13 +4,13 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
-  
+
   .view-events h2 {
     margin-bottom: 20px;
     font-size: 25px;
     font-weight: 700;
   }
-  
+
   .events-table {
     width: 100%;
     border-collapse: collapse;
@@ -36,3 +36,21 @@
     background-color: #fafafa;
   }
   
+  .events-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+
+  .events-header button{
+    padding: 10px 20px;
+    background-color: #013263;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  }

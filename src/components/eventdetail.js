@@ -1,14 +1,24 @@
-// src/components/EventDetail.js
-
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, useLocation, Link } from "react-router-dom";
 import events from "./eventdata"; // Adjust path if needed
+import myBookings from "./mybookingdata"; // Adjust path if needed
 import "../assets/css/eventdetail.css";
 
 const EventDetail = () => {
   const { eventId } = useParams();
-  const event = events.find((event) => event.id === parseInt(eventId));
+  const location = useLocation();
 
+  // Debugging state
+  console.log("Location state:", location.state); 
+
+  // Determine the source
+  const source = location.state?.source || "events";
+  const dataSource = source === "mybookings" ? myBookings : events;
+
+  // Find the event
+  const event = dataSource.find((event) => event.id === parseInt(eventId));
+
+  // Handle case where event is not found
   if (!event) {
     return <h2>Event not found</h2>;
   }
@@ -18,32 +28,28 @@ const EventDetail = () => {
       <div>
         <div className="event-dtl-img">
           <img
-            src={event.image2}
+            src={event.image2} // Ensure the image source is correct
             alt={event.title}
             className="event-detail-image"
           />
         </div>
-        <div className="event-dtl-desc" >
+        <div className="event-dtl-desc">
           <h1>{event.title}</h1>
           <div className="date-location">
-
-          <p>Date: {event.date}</p>
-          <p>Location: {event.location}</p>
+            <p>Date: {event.date}</p>
+            <p>Location: {event.location}</p>
           </div>
           <p className="event-dtl-description">{event.description}</p>
-          <Link className="event-detail-btn" to="/events">Back to Event List</Link>
+          <Link className="event-detail-btn" to="/events">
+            Back to Event List
+          </Link>
         </div>
-
-      </div>  
-      <div className="get-start">
-
-    
-</div>
-
-<div className="get-start-section" data-aos="fade-up" data-aos-duration="1500">
+      </div>
+      <div className="get-start"></div>
+      <div className="get-start-section" data-aos="fade-up" data-aos-duration="1500">
         <div>
-        <div>Request Early acess to get started! </div>
-        <div>Register today & start exploring the endless possibilities!</div>
+          <div>Request Early access to get started!</div>
+          <div>Register today & start exploring the endless possibilities!</div>
         </div>
         <button>Get Started!</button>
       </div>

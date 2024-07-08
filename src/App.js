@@ -153,7 +153,7 @@ const App = () => (
           path="/admin"
           element={
             <AdminLayout>
-              <AddEvent />
+              <ViewEvents />
             </AdminLayout>
           }
         />
@@ -209,7 +209,7 @@ const App = () => (
           path="/admin/*"
           element={
             <AdminLayout>
-              <AddEvent />
+              <ViewEvents />
             </AdminLayout>
           }
         />

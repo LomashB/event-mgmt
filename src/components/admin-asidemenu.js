@@ -9,10 +9,10 @@ const AdminAsideMenu = () => {
     <aside className="admin-aside-menu">
       <nav>
         <ul>
-          <li><Link to="/admin/add-category">Add Category</Link></li>
           <li><Link to="/admin/view-category">View Categories</Link></li>
-          <li><Link to="/admin/add-event">Add Event</Link></li>
+          <li><Link to="/admin/add-category">Add Category</Link></li>
           <li><Link to="/admin/view-events">View Events</Link></li>
+          <li><Link to="/admin/add-event">Add Event</Link></li>
           <li><Link to="/admin/view-users">View Users</Link></li>
           <li><Link to="/admin/change-credentials">Change Credentials</Link></li>
         </ul>

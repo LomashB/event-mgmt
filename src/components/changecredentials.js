@@ -35,6 +35,14 @@ const ChangeAdminCredentials = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+        <div className="form-group">
+          <label>Confirm Password</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
         <button type="submit">Change Credentials</button>
       </form>
     </div>

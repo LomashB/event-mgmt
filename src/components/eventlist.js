@@ -9,9 +9,10 @@ const EventList = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Filter events based on the selected category
-  const filteredEvents = selectedCategory === "All"
-    ? events
-    : events.filter(event => event.category === selectedCategory);
+  const filteredEvents =
+    selectedCategory === "All"
+      ? events
+      : events.filter((event) => event.category === selectedCategory);
 
   // Handle category selection
   const handleCategoryClick = (category) => {
@@ -31,15 +32,60 @@ const EventList = () => {
       <div className="top-sec-types">
         <p>Categories</p>
         <ul>
-          <li onClick={() => handleCategoryClick("All")} className={selectedCategory === "All" ? "selected" : ""}>All</li>
-          <li onClick={() => handleCategoryClick("Wedding")} className={selectedCategory === "Wedding" ? "selected" : ""}>Wedding</li>
-          <li onClick={() => handleCategoryClick("Sports")} className={selectedCategory === "Sports" ? "selected" : ""}>Sports Events</li>
-          <li onClick={() => handleCategoryClick("Birthday")} className={selectedCategory === "Birthday" ? "selected" : ""}>Birthday Party</li>
-          <li onClick={() => handleCategoryClick("Car")} className={selectedCategory === "Car" ? "selected" : ""}>Car</li>
-          <li onClick={() => handleCategoryClick("Bus")} className={selectedCategory === "Bus" ? "selected" : ""}>Bus</li>
-          <li onClick={() => handleCategoryClick("Call")} className={selectedCategory === "Call" ? "selected" : ""}>Call</li>
-          <li onClick={() => handleCategoryClick("Song")} className={selectedCategory === "Song" ? "selected" : ""}>Song</li>
-          <li onClick={() => handleCategoryClick("AI")} className={selectedCategory === "AI" ? "selected" : ""}>AI</li>
+          <li
+            onClick={() => handleCategoryClick("All")}
+            className={selectedCategory === "All" ? "selected" : ""}
+          >
+            All
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Wedding")}
+            className={selectedCategory === "Wedding" ? "selected" : ""}
+          >
+            Wedding
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Sports")}
+            className={selectedCategory === "Sports" ? "selected" : ""}
+          >
+            Sports Events
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Birthday")}
+            className={selectedCategory === "Birthday" ? "selected" : ""}
+          >
+            Birthday Party
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Car")}
+            className={selectedCategory === "Car" ? "selected" : ""}
+          >
+            Car
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Bus")}
+            className={selectedCategory === "Bus" ? "selected" : ""}
+          >
+            Bus
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Call")}
+            className={selectedCategory === "Call" ? "selected" : ""}
+          >
+            Call
+          </li>
+          <li
+            onClick={() => handleCategoryClick("Song")}
+            className={selectedCategory === "Song" ? "selected" : ""}
+          >
+            Song
+          </li>
+          <li
+            onClick={() => handleCategoryClick("AI")}
+            className={selectedCategory === "AI" ? "selected" : ""}
+          >
+            AI
+          </li>
         </ul>
       </div>
 
@@ -50,8 +96,18 @@ const EventList = () => {
           </div>
         ) : (
           filteredEvents.map((event) => (
-            <div key={event.id} className="event-item" data-aos="fade-up" data-aos-duration="1500">
-              <Link to={`/event/${event.id}`}>
+            <div
+              key={event.id}
+              className="event-item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <Link
+              to={{
+                pathname: `/event/${event.id}`,
+                state: { source: "events" },
+              }}
+            >
                 <img src={event.image} alt={event.title} />
                 <div className="event-desc">
                   <h2>{event.title}</h2>

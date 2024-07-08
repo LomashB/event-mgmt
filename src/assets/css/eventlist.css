@@ -38,7 +38,7 @@
 }
 
 .event-desc{
-    padding: 5% 5%;
+     padding: 5% 5%;
 }
 
 .event-item img{
@@ -58,7 +58,7 @@
 
 .event-desc h2{
     font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     color: #ff6a11;
     text-decoration: underline;
     text-decoration-color: #013263; 
@@ -69,6 +69,9 @@
     color: grey;
     text-decoration: underline;
     text-decoration-color: #013263; 
+    font-size: 20px;
+    padding: 5px 0px;
+
 }
 
 .event-location{
@@ -76,6 +79,8 @@
     color: ghostwhite;
     text-decoration: underline;
     text-decoration-color: #013263; 
+    font-size: 18px;
+    padding: 5px 0px;
 }
 
 .event-desc button{
