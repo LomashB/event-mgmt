@@ -1,0 +1,49 @@
+/* src/assets/css/AddEvent.css */
+
+.add-event {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-event h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .add-event .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .add-event .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-event .form-group input,
+  .add-event .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-event .form-group textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .add-event button {
+    padding: 10px 20px;
+    background-color: #013263;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+  }
+  

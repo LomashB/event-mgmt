@@ -1,0 +1,27 @@
+/* src/assets/css/ViewCategory.css */
+
+.view-category {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-category h2 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  
+  .view-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .view-category ul li {
+    background-color: #f0eded;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+
+  }

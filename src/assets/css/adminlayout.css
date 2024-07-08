@@ -1,0 +1,25 @@
+/* src/assets/css/AdminLayout.css */
+
+.admin-layout {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin-layout-content {
+    display: flex;
+    flex-grow: 1;
+    /* padding: 20px; */
+  }
+  
+  .admin-main-content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    background-color: aliceblue;
+    height: calc(100vh - 100px);
+  }
+
+  .admin-main-content>div{
+      overflow: auto;
+      height: 100% ;
+  }

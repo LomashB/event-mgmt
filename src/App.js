@@ -1,5 +1,6 @@
 import "./App.css";
 import "./assets/css/aos.css";
+import './assets/css/adminlayout.css'; 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/about";
@@ -37,13 +38,16 @@ const RegularLayout = ({ children }) => {
   );
 };
 
+
 const AdminLayout = ({ children }) => {
   return (
     <div className="admin-layout">
       <AdminHeader />
-      <div className="admin-content">
+      <div className="admin-layout-content">
         <AdminAsideMenu />
-        <main>{children}</main>
+        <main className="admin-main-content">
+          {children}
+        </main>
       </div>
       <AdminFooter />
     </div>

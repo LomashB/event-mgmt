@@ -1,0 +1,54 @@
+/* src/assets/css/AdminHeader.css */
+
+.admin-header {
+    background: linear-gradient(to right,#013263 0%,#00021d 20%);
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-header-content h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .admin-header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .admin-header-content img{
+    width: 40px;
+  }
+
+  .admin-header-content-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .admin-header-content-div-div{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .admin-header-content-div-div h3{
+        font-size: 16px;
+        font-weight: 600;
+  }
+
+  .admin-header-content-div-div p{
+    font-size: 14px;
+    padding: 0;
+}
