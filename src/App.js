@@ -27,6 +27,7 @@ import AddCategory from "./components/addcategory";
 import ViewCategory from "./components/viewcategory";
 import ViewUsers from "./components/viewusers";
 import ChangeAdminCredentials from "./components/changecredentials";
+import ChangePersonalDetails from "./components/changepersonaldetails";
 
 const RegularLayout = ({ children }) => {
   return (
@@ -202,6 +203,14 @@ const App = () => (
           element={
             <AdminLayout>
               <ChangeAdminCredentials />
+            </AdminLayout>
+          }
+        />
+        <Route
+          path="/admin/change-personal-details"
+          element={
+            <AdminLayout>
+              <ChangePersonalDetails />
             </AdminLayout>
           }
         />

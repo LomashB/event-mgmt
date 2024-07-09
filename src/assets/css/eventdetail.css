@@ -38,14 +38,14 @@
 
 .event-dtl-desc h1{
     font-weight: 700;
-    font-size: 2.9rem;
+    font-size: 2.3rem;
     color: #ff6a11;
     text-align: center;
 }
 
 .date-location{
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1.9rem;
     justify-content: space-between;
 }
 
@@ -53,15 +53,19 @@
     font-weight: 600;
     color: gray;
     flex-wrap: wrap;
+    font-size: 21px;
+
 }
 
 .date-location p:first-child{
     color: white;
 }
 
+
 .event-dtl-description{
     color: rgba(255, 248, 220, 0.769);
-    margin-block: 3vh;
+    margin-block: 1.5vh;
+    font-size: 1.2rem;
 }
 
 .event-detail-btn{

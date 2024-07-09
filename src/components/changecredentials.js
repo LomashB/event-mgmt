@@ -8,6 +8,8 @@ import React, { useState } from 'react';
 const ChangeAdminCredentials = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [oldpassword, setOldPassword] = useState('');
+  const [confirmpassword, setConfirmPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,6 +30,14 @@ const ChangeAdminCredentials = () => {
           />
         </div>
         <div className="form-group">
+          <label>Old Password</label>
+          <input
+            type="password"
+            value={oldpassword}
+            onChange={(e) => setOldPassword(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
           <label>New Password</label>
           <input
             type="password"
@@ -39,8 +49,8 @@ const ChangeAdminCredentials = () => {
           <label>Confirm Password</label>
           <input
             type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            value={confirmpassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
           />
         </div>
         <button type="submit">Change Credentials</button>

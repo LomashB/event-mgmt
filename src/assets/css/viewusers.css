@@ -11,6 +11,8 @@
     margin-bottom: 20px;
     font-size: 25px;
     font-weight: 700;
+    color: #013263;
+
   }
   
   .view-users table {
@@ -46,3 +48,18 @@
     background-color: #f1f1f1;
   }
   
+  .unblock-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600  ;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .unblock-button:hover {
+    background-color: #ff1a1a;
+  }

@@ -288,23 +288,25 @@ const ViewUsers = () => {
         <table>
           <thead>
             <tr>
-              <th>Profile Picture</th>
-              <th>First Name</th>
-              <th>Last Name</th>
+              <th>No.</th>
+              <th>Image</th>
+              <th>Name</th>
               <th>Email</th>
               <th>Gender</th>
               <th>Phone No.</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
-            {users.map((user) => (
+            {users.map((user, index) => (
               <tr key={user.id}>
+                <td>{index + 1}</td>
                 <td><img src={user.profilePic} alt={`${user.firstName} ${user.lastName}`} /></td>
-                <td>{user.firstName}</td>
-                <td>{user.lastName}</td>
+                <td>{user.firstName} {user.lastName}</td>
                 <td>{user.email}</td>
                 <td>{user.gender}</td>
                 <td>{user.phoneNo}</td>
+                <td><button className="unblock-button">Unblock</button></td>
               </tr>
             ))}
           </tbody>

@@ -15,6 +15,7 @@ const AdminAsideMenu = () => {
           <li><Link to="/admin/add-event">Add Event</Link></li>
           <li><Link to="/admin/view-users">View Users</Link></li>
           <li><Link to="/admin/change-credentials">Change Credentials</Link></li>
+          <li><Link to="/admin/change-personal-details">Change Personal Details</Link></li>
         </ul>
       </nav>
     </aside>

@@ -1,18 +1,33 @@
 import React, { useState } from 'react';
-import './../assets/css/addevent.css'
-
-
+import './../assets/css/addevent.css';
 
 const AddEvent = () => {
-  const [eventName, setEventName] = useState('');
+  const [eventImage, setEventImage] = useState(null);
+  const [eventTitle, setEventTitle] = useState('');
   const [eventDate, setEventDate] = useState('');
+  const [eventTime, setEventTime] = useState('');
+  const [eventPrice, setEventPrice] = useState('');
+  const [eventCategory, setEventCategory] = useState('');
   const [eventLocation, setEventLocation] = useState('');
   const [eventDescription, setEventDescription] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add logic to handle form submission
-    console.log('Event added:', eventName, eventDate, eventLocation, eventDescription);
+    console.log('Event added:', {
+      eventImage,
+      eventTitle,
+      eventDate,
+      eventTime,
+      eventPrice,
+      eventCategory,
+      eventLocation,
+      eventDescription,
+    });
+  };
+
+  const handleImageChange = (e) => {
+    setEventImage(e.target.files[0]);
   };
 
   return (
@@ -20,15 +35,22 @@ const AddEvent = () => {
       <h2>Add New Event</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Event Name</label>
+          <label>Select an Image</label>
           <input
-            type="text"
-            value={eventName}
-            onChange={(e) => setEventName(e.target.value)}
+            type="file"
+            onChange={handleImageChange}
           />
         </div>
         <div className="form-group">
-          <label>Event Date</label>
+          <label>Title</label>
+          <input
+            type="text"
+            value={eventTitle}
+            onChange={(e) => setEventTitle(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Date</label>
           <input
             type="date"
             value={eventDate}
@@ -36,7 +58,31 @@ const AddEvent = () => {
           />
         </div>
         <div className="form-group">
-          <label>Event Location</label>
+          <label>Time</label>
+          <input
+            type="time"
+            value={eventTime}
+            onChange={(e) => setEventTime(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Price</label>
+          <input
+            type="number"
+            value={eventPrice}
+            onChange={(e) => setEventPrice(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Category</label>
+          <input
+            type="text"
+            value={eventCategory}
+            onChange={(e) => setEventCategory(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Location</label>
           <input
             type="text"
             value={eventLocation}
@@ -44,7 +90,7 @@ const AddEvent = () => {
           />
         </div>
         <div className="form-group">
-          <label>Event Description</label>
+          <label>Description</label>
           <textarea
             value={eventDescription}
             onChange={(e) => setEventDescription(e.target.value)}
