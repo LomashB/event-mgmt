@@ -1,5 +1,3 @@
-// src/components/EventList.js
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import events from "./eventdata";
@@ -9,10 +7,9 @@ const EventList = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Filter events based on the selected category
-  const filteredEvents =
-    selectedCategory === "All"
-      ? events
-      : events.filter((event) => event.category === selectedCategory);
+  const filteredEvents = selectedCategory === "All"
+    ? events
+    : events.filter((event) => event.category === selectedCategory);
 
   // Handle category selection
   const handleCategoryClick = (category) => {
@@ -90,18 +87,8 @@ const EventList = () => {
           </div>
         ) : (
           filteredEvents.map((event) => (
-            <div
-              key={event.id}
-              className="event-item"
-              data-aos="fade-up"
-              data-aos-duration="1500"
-            >
-              <Link
-              to={{
-                pathname: `/event/${event.id}`,
-                state: { source: "events" },
-              }}
-            >
+            <div key={event.id} className="event-item" data-aos="fade-up" data-aos-duration="1500">
+              <Link to={`/event/${event.id}?source=events`}>
                 <img src={event.image} alt={event.title} />
                 <div className="event-desc">
                   <h2>{event.title}</h2>

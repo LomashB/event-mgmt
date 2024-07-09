@@ -1,18 +1,21 @@
 import React from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
-import events from "./eventdata"; // Adjust path if needed
-import myBookings from "./mybookingdata"; // Adjust path if needed
+import events from "./eventdata";
+import myBookings from "./mybookingdata";
 import "../assets/css/eventdetail.css";
 
 const EventDetail = () => {
   const { eventId } = useParams();
   const location = useLocation();
 
-  // Debugging state
-  console.log("Location state:", location.state); 
+  // Function to get query parameters
+  const getQueryParams = (search) => {
+    return new URLSearchParams(search);
+  };
 
-  // Determine the source
-  const source = location.state?.source || "events";
+  // Get the source from the query parameters
+  const queryParams = getQueryParams(location.search);
+  const source = queryParams.get("source") || "events";
   const dataSource = source === "mybookings" ? myBookings : events;
 
   // Find the event
@@ -27,11 +30,7 @@ const EventDetail = () => {
     <div className="event-detail" data-aos="fade-up" data-aos-duration="1500">
       <div>
         <div className="event-dtl-img">
-          <img
-            src={event.image2} // Ensure the image source is correct
-            alt={event.title}
-            className="event-detail-image"
-          />
+          <img src={event.image2} alt={event.title} className="event-detail-image" />
         </div>
         <div className="event-dtl-desc">
           <h1>{event.title}</h1>
@@ -40,7 +39,7 @@ const EventDetail = () => {
             <p>Location: {event.location}</p>
           </div>
           <p className="event-dtl-description">{event.description}</p>
-          <Link className="event-detail-btn" to="/events">
+          <Link className="event-detail-btn" to={`/${source}`}>
             Back to Event List
           </Link>
         </div>
