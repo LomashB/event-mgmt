@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './../assets/css/adminasidemenu.css'; // Importing the specific CSS for styling
+import './../../assets/css/adminasidemenu.css'; // Importing the specific CSS for styling
 
 const AdminAsideMenu = () => {
   return (

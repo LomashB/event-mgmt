@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './../assets/css/addevent.css';
+import './../../assets/css/addevent.css';
 
 const AddEvent = () => {
   const [eventImage, setEventImage] = useState(null);

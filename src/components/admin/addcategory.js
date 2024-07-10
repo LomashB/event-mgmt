@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './../assets/css/addcategory.css';
+import './../../assets/css/addcategory.css';
 
 const AddCategory = () => {
   const [categoryImage, setCategoryImage] = useState(null);

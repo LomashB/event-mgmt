@@ -1,4 +1,4 @@
-import './../assets/css/changecredentials.css'
+import './../../assets/css/changecredentials.css'
 
 // src/components/ChangeAdminCredentials.js
 

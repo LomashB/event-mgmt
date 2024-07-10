@@ -17,17 +17,16 @@ import Page404 from "./components/page404";
 import MyBookings from "./components/mybookings";
 import Profile from "./components/profile";
 
-import AdminHeader from "./components/admin-header";
-import AdminFooter from "./components/admin-footer";
-import AdminAsideMenu from "./components/admin-asidemenu";
-
-import AddEvent from "./components/addevent";
-import ViewEvents from "./components/viewevents";
-import AddCategory from "./components/addcategory";
-import ViewCategory from "./components/viewcategory";
-import ViewUsers from "./components/viewusers";
-import ChangeAdminCredentials from "./components/changecredentials";
-import ChangePersonalDetails from "./components/changepersonaldetails";
+import AdminHeader from "./components/admin/admin-header";
+import AdminFooter from "./components/admin/admin-footer";
+import AdminAsideMenu from "./components/admin/admin-asidemenu";
+import AddEvent from "./components/admin/addevent";
+import ViewEvents from "./components/admin/viewevents";
+import AddCategory from "./components/admin/addcategory";
+import ViewCategory from "./components/admin/viewcategory";
+import ViewUsers from "./components/admin/viewusers";
+import ChangeAdminCredentials from "./components/admin/changecredentials";
+import ChangePersonalDetails from "./components/admin/changepersonaldetails";
 
 const RegularLayout = ({ children }) => {
   return (

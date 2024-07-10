@@ -1,16 +1,16 @@
-import image1 from "../assets/images/event/event-1.jpg";
-import image2 from "../assets/images/event/event-2.jpg";
-import image3 from "../assets/images/event/event-3.jpg";
-import image4 from "../assets/images/event/event-4.jpg";
-import image5 from "../assets/images/event/event-5.jpg";
-import image6 from "../assets/images/event/event-6.jpg";
+import image1 from "../../assets/images/event/event-1.jpg";
+import image2 from "../../assets/images/event/event-2.jpg";
+import image3 from "../../assets/images/event/event-3.jpg";
+import image4 from "../../assets/images/event/event-4.jpg";
+import image5 from "../../assets/images/event/event-5.jpg";
+import image6 from "../../assets/images/event/event-6.jpg";
 
-import img1 from "../assets/images/event/1.event-grid.jpg";
-import img2 from "../assets/images/event/2.event-grid.jpg";
-import img3 from "../assets/images/event/3.event-grid.jpg";
-import img4 from "../assets/images/event/4.event-grid.jpg";
-import img5 from "../assets/images/event/5.event-grid.jpg";
-import img6 from "../assets/images/event/6.event-grid.jpg";
+import img1 from "../../assets/images/event/1.event-grid.jpg";
+import img2 from "../../assets/images/event/2.event-grid.jpg";
+import img3 from "../../assets/images/event/3.event-grid.jpg";
+import img4 from "../../assets/images/event/4.event-grid.jpg";
+import img5 from "../../assets/images/event/5.event-grid.jpg";
+import img6 from "../../assets/images/event/6.event-grid.jpg";
 
 const myBookings = [
   {

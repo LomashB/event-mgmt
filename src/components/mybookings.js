@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import events from "./mybookingdata";
+import events from "./data/mybookingdata";
 import "./../assets/css/mybookings.css";
 import "./../assets/css/eventlist.css";
 

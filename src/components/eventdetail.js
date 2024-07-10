@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams, useLocation, Link } from "react-router-dom";
-import events from "./eventdata";
-import myBookings from "./mybookingdata";
+import events from "./data/eventdata";
+import myBookings from "./data/mybookingdata";
 import "../assets/css/eventdetail.css";
 
 const EventDetail = () => {

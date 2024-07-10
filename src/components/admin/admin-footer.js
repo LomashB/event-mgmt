@@ -1,7 +1,7 @@
 // src/components/AdminFooter.js
 
 import React from 'react';
-import './../assets/css/adminfooter.css'; // Importing the specific CSS for styling
+import './../../assets/css/adminfooter.css'; // Importing the specific CSS for styling
 
 const AdminFooter = () => {
   return (

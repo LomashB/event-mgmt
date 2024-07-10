@@ -1,7 +1,7 @@
 // src/components/ViewUsers.js
 
 import React from "react";
-import "./../assets/css/viewusers.css";
+import "./../../assets/css/viewusers.css";
 
 const users = [
   {

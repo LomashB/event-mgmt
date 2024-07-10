@@ -3,9 +3,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './../assets/css/adminheader.css'; // Importing the specific CSS for styling
-import profileImg from './../assets/images/pfp.png';
-import logo from './../assets/images/favicon.png';
+import './../../assets/css/adminheader.css'; // Importing the specific CSS for styling
+import profileImg from './../../assets/images/pfp.png';
+import logo from './../../assets/images/favicon.png';
  
 
 const AdminHeader = () => {
