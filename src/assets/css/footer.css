@@ -66,6 +66,7 @@
     margin-block: 10px;
     transition: all 0.2s ease-in-out;
     color: rgba(128, 128, 128, 0.758);
+    font-weight: 600;
 }
 .footer-content li:hover{
     color: grey;
