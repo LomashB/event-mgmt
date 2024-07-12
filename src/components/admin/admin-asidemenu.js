@@ -6,7 +6,10 @@ import './../../assets/css/adminasidemenu.css'; // Importing the specific CSS fo
 
 const AdminAsideMenu = () => {
   return (
-    <aside className="admin-aside-menu">
+
+    
+
+    <aside className="admin-aside-menu ">
       <nav>
         <ul>
           <li><Link to="/admin/view-category">View Categories</Link></li>

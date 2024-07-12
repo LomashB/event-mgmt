@@ -17,6 +17,7 @@
     flex-grow: 1;
     background-color: aliceblue;
     height: calc(100vh - 100px);
+    overflow: auto;
   }
 
   .admin-main-content>div{

@@ -52,3 +52,13 @@
     font-size: 14px;
     padding: 0;
 }
+
+.menubar-image{
+  width: 25px !important;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.admin-aside-menu-hidden{
+  background-color: red !important;
+}
