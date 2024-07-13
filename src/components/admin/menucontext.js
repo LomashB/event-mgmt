@@ -1,16 +1,13 @@
 // src/contexts/MenuContext.js
+import React, { createContext, useState } from 'react';
 
-import React, { createContext, useState, useContext } from 'react';
-
-const MenuContext = createContext();
-
-export const useMenuContext = () => useContext(MenuContext);
+export const MenuContext = createContext();
 
 export const MenuProvider = ({ children }) => {
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(true);
 
   const toggleMenuVisibility = () => {
-    setIsMenuVisible(prevState => !prevState);
+    setIsMenuVisible(!isMenuVisible);
   };
 
   return (

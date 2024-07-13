@@ -12,15 +12,17 @@
   }
   
   .admin-main-content {
-    margin-left: 250px; 
     padding: 20px;
     flex-grow: 1;
     background-color: aliceblue;
     height: calc(100vh - 100px);
     overflow: auto;
+    transition: all 0.1s ease-in-out;
   }
 
   .admin-main-content>div{
       overflow: auto;
       height: 100% ;
+    transition: all 0.1s ease-in-out;
+
   }

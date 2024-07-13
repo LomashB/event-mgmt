@@ -28,6 +28,7 @@ import ViewCategory from "./components/admin/viewcategory";
 import ViewUsers from "./components/admin/viewusers";
 import ChangeAdminCredentials from "./components/admin/changecredentials";
 import ChangePersonalDetails from "./components/admin/changepersonaldetails";
+import { MenuProvider } from './components/admin/menucontext';
 
 
 
@@ -45,6 +46,7 @@ const RegularLayout = ({ children }) => {
 const AdminLayout = ({ children }) => {
   return (
     <div className="admin-layout">
+          <MenuProvider>
       <AdminHeader />
       <div className="admin-layout-content">
         <AdminAsideMenu />
@@ -53,6 +55,7 @@ const AdminLayout = ({ children }) => {
         </main>
       </div>
       <AdminFooter />
+      </MenuProvider>
     </div>
   );
 };
