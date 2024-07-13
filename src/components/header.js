@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './../assets/css/header.css';
 import logo from './../assets/images/1.site-logo.png';
-import menu from './../assets/images/1.down-arrow.png';
+import menu from "./../assets/images/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg";
 import profileImg from './../assets/images/pfp.png'; 
 
 const Header = () => {
