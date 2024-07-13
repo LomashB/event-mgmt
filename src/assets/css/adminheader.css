@@ -88,6 +88,6 @@
 
   .admin-main-content {
 
-  height: calc(100vh - 170px) !important;
+  height: calc(100vh - 150px) !important;
   }
 }
