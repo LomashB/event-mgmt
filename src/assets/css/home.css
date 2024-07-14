@@ -18,7 +18,7 @@
   font-size: 3.7rem;
   font-weight: 700;
   background: linear-gradient(to right, rgb(255, 174, 0) 60%, yellow);
-  -webkit-background-clip: text; /* for Safari */
+  background-clip: text; /* for Safari */
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent; /* fallback color */
   margin-block: 20px;
@@ -115,7 +115,7 @@
     #e712ff,
     rgb(13, 184, 241)
   );
-  -webkit-background-clip: text; /* for Safari */
+  background-clip: text; /* for Safari */
   -webkit-text-fill-color: transparent; /* for Safari */
   color: transparent; /* fallback color */
   font-size: 35px;
