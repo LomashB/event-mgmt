@@ -2,15 +2,16 @@
 
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./../../assets/css/adminasidemenu.css"; 
+import "./../../assets/css/adminasidemenu.css";
 import { MenuContext } from "../admin/menucontext";
-
 
 const AdminAsideMenu = () => {
   const { isMenuVisible } = useContext(MenuContext);
   return (
     <aside
-      className={`admin-aside-menu ${isMenuVisible ? "admin-aside-menu-visible" : "admin-aside-menu-hidden"}`}
+      className={`admin-aside-menu ${
+        isMenuVisible ? "admin-aside-menu-visible" : "admin-aside-menu-hidden"
+      }`}
     >
       <nav>
         <ul>

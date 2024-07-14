@@ -1,6 +1,6 @@
 import "./App.css";
 import "./assets/css/aos.css";
-import './assets/css/adminlayout.css'; 
+import "./assets/css/adminlayout.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/about";
@@ -28,9 +28,7 @@ import ViewCategory from "./components/admin/viewcategory";
 import ViewUsers from "./components/admin/viewusers";
 import ChangeAdminCredentials from "./components/admin/changecredentials";
 import ChangePersonalDetails from "./components/admin/changepersonaldetails";
-import { MenuProvider } from './components/admin/menucontext';
-
-
+import { MenuProvider } from "./components/admin/menucontext";
 
 const RegularLayout = ({ children }) => {
   return (
@@ -42,19 +40,16 @@ const RegularLayout = ({ children }) => {
   );
 };
 
-
 const AdminLayout = ({ children }) => {
   return (
     <div className="admin-layout">
-          <MenuProvider>
-      <AdminHeader />
-      <div className="admin-layout-content">
-        <AdminAsideMenu />
-        <main className="admin-main-content">
-          {children}
-        </main>
-      </div>
-      <AdminFooter />
+      <MenuProvider>
+        <AdminHeader />
+        <div className="admin-layout-content">
+          <AdminAsideMenu />
+          <main className="admin-main-content">{children}</main>
+        </div>
+        <AdminFooter />
       </MenuProvider>
     </div>
   );

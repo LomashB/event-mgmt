@@ -2,10 +2,9 @@
   text-align: center;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-
-*{
+* {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -46,9 +45,7 @@
   }
 }
 
-.main{
-  /* min-height: 85vh; */
-}
+
 
 /* scroll bar */
 /* width */
@@ -65,7 +62,6 @@
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 6px;
-
 }
 
 /* Handle on hover */
@@ -73,7 +69,7 @@
   background: #555;
 }
 
-*::selection{
+*::selection {
   background-color: rgba(255, 166, 0, 0.447);
-  color: white ;
+  color: white;
 }

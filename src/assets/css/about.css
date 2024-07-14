@@ -66,7 +66,7 @@
   color: #7f9dde;
 }
 
-.about-desc p{
+.about-desc p {
   color: #7f9dde;
 }
 
@@ -105,7 +105,7 @@
   font-size: 13px;
 }
 
-.fb-box:hover{
+.fb-box:hover {
   transform: scale(1.05);
 }
 
@@ -208,37 +208,34 @@
     flex-direction: column;
   }
 
-  .fb-box{
+  .fb-box {
     width: calc(50% - 20px);
+  }
+}
 
+@media screen and (max-width: 850px) {
+  .img-journey-sec {
+    flex-direction: column;
+    gap: 30px;
   }
 
+  .img-award {
+    width: 90%;
+  }
 
+  .line {
+    height: 400px !important;
+  }
+
+  .topic-data {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width:850px) {
-    .img-journey-sec{
-        flex-direction: column;
-        gap: 30px;
-      }
-    
-      .img-award{
-        width: 90%;
-      }
-
-      .line{
-        height: 400px !important;
-      }
-
-      .topic-data {
-        width: 90%;
-      }
-}
-
-@media screen and (max-width:1077px) {
-    .line{
-        height: 500px;
-    }
+@media screen and (max-width: 1077px) {
+  .line {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -257,42 +254,40 @@
   }
 }
 
-
-@media screen and (max-width:600px) {
-    .fb-box{
-        width: calc(100% - 20px);
-    
-      }
+@media screen and (max-width: 600px) {
+  .fb-box {
+    width: calc(100% - 20px);
+  }
 }
 
-
-@media screen and (max-width:660px) {
-    .line{
-        height: 500px !important ;
-      }
-      .img-image{
-        width: 60vw;
-        height: calc(60vw*66/52);
-      }
+@media screen and (max-width: 660px) {
+  .line {
+    height: 500px !important ;
+  }
+  .img-image {
+    width: 60vw;
+    height: calc(60vw * 66 / 52);
+  }
 }
 
-@media screen and (max-width:500px) {
-    .flexneeded{
-        flex-direction: column;
-        width: 79vw;
-    }
+@media screen and (max-width: 500px) {
+  .flexneeded {
+    flex-direction: column;
+    width: 79vw;
+  }
 
-    .flexneeded h3, p{
-        margin-left: 20px;
-    }
+  .flexneeded h3,
+  p {
+    margin-left: 20px;
+  }
 
-    .line{
-        height: 700px !important;
-    }
+  .line {
+    height: 700px !important;
+  }
 }
 
-@media screen and (max-width:368px) {
-    .line{
-        height: 800px !important;
-    }
+@media screen and (max-width: 368px) {
+  .line {
+    height: 800px !important;
+  }
 }

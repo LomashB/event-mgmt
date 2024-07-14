@@ -6,12 +6,21 @@ import img1 from "./../assets/images/google.png";
 import img2 from "./../assets/images/dropbox.png";
 import img3 from "./../assets/images/slack.png";
 import img4 from "./../assets/images/shopify.png";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div className="home-body">
-      <div className="image-section" >
-        <div className="image-section-text" data-aos="fade-up" data-aos-duration="1500">
+      <Helmet>
+        <title>Home Page | Harmony Event Management</title>
+      </Helmet>
+
+      <div className="image-section">
+        <div
+          className="image-section-text"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <h2>One Stop Event Planner</h2>
           <p>
             yet bed any for travelling assistance indulgence unpleasing. not
@@ -30,7 +39,11 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="company-section" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        className="company-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <img src={img1}></img>
         <img src={img2}></img>
         <img src={img3}></img>
@@ -83,62 +96,71 @@ const Home = () => {
       </div>
 
       <div className="desc-section" data-aos="fade-up" data-aos-duration="1500">
-
         <div className="desc-sec-1">
-          Harmony Event is management firm & wedding planner in the town this is lorem insum text and we can use it anywhere in the clde
-          wherever needed in the code in the context without context.
-        </div>
-        
-    <div className="desc-sec-2">
-        <div className="desc-sec-21">
-          <div>
-            <div className="top-box"></div>
-            <h3>Photography</h3>
-          </div>
-          <div>a team of 13 talented Photography and photographers very talented and passionate about it.</div>
-        </div>
-         
-        <div className="desc-sec-21">
-          <div>
-            <div className="top-box"></div>
-            <h3>Cinematography and videography</h3>
-          </div>
-          <div>a team of 13 talented Photography and photographers very talented and passionate about it.</div>
-        </div>
-         
-
-        <div className="desc-sec-21">
-          <div>
-            <div className="top-box"></div>
-            <h3>full venue decoration</h3>
-          </div>
-          <div>a team of 13 talented Photography and photographers very talented and passionate about it.</div>
-        </div>
-         
-        <div className="desc-sec-21">
-          <div>
-            <div className="top-box"></div>
-            <h3>home decoration</h3>
-          </div>
-          <div>a team of 13 talented Photography and photographers very talented and passionate about it.</div>
-        </div>
+          Harmony Event is management firm & wedding planner in the town this is
+          lorem insum text and we can use it anywhere in the clde wherever
+          needed in the code in the context without context.
         </div>
 
+        <div className="desc-sec-2">
+          <div className="desc-sec-21">
+            <div>
+              <div className="top-box"></div>
+              <h3>Photography</h3>
+            </div>
+            <div>
+              a team of 13 talented Photography and photographers very talented
+              and passionate about it.
+            </div>
+          </div>
+
+          <div className="desc-sec-21">
+            <div>
+              <div className="top-box"></div>
+              <h3>Cinematography and videography</h3>
+            </div>
+            <div>
+              a team of 13 talented Photography and photographers very talented
+              and passionate about it.
+            </div>
+          </div>
+
+          <div className="desc-sec-21">
+            <div>
+              <div className="top-box"></div>
+              <h3>full venue decoration</h3>
+            </div>
+            <div>
+              a team of 13 talented Photography and photographers very talented
+              and passionate about it.
+            </div>
+          </div>
+
+          <div className="desc-sec-21">
+            <div>
+              <div className="top-box"></div>
+              <h3>home decoration</h3>
+            </div>
+            <div>
+              a team of 13 talented Photography and photographers very talented
+              and passionate about it.
+            </div>
+          </div>
+        </div>
       </div>
 
-<div className="get-start" data-aos="fade-up" data-aos-duration="1500">
-
-      <div className="get-start-section">
-        <div>
-        <div>Request Early acess to get started! </div>
-        <div>Register today & start exploring the endless possibilities!</div>
+      <div className="get-start" data-aos="fade-up" data-aos-duration="1500">
+        <div className="get-start-section">
+          <div>
+            <div>Request Early acess to get started! </div>
+            <div>
+              Register today & start exploring the endless possibilities!
+            </div>
+          </div>
+          <button>Get Started!</button>
         </div>
-        <button>Get Started!</button>
       </div>
-</div>
-
     </div>
-
   );
 };
 

@@ -1,24 +1,28 @@
-import './../../assets/css/changecredentials.css'
+import "./../../assets/css/changecredentials.css";
+import { Helmet } from "react-helmet";
 
 // src/components/ChangeAdminCredentials.js
 
-import React, { useState } from 'react';
-
+import React, { useState } from "react";
 
 const ChangeAdminCredentials = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [oldpassword, setOldPassword] = useState('');
-  const [confirmpassword, setConfirmPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [oldpassword, setOldPassword] = useState("");
+  const [confirmpassword, setConfirmPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add logic to handle credentials change
-    console.log('Credentials changed:', username, password);
+    console.log("Credentials changed:", username, password);
   };
 
   return (
     <div className="change-credentials">
+      <Helmet>
+        <title>Change Credentials | Admin</title>
+      </Helmet>
+
       <h2>Change Admin Credentials</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">

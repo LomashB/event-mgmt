@@ -17,7 +17,12 @@ const AdminHeader = () => {
       <div className="admin-header-content">
         <Link to="/admin">
           <h1>
-            <img className="menubar-image" alt="Toggle Menu" onClick={toggleMenuVisibility} src={MenuIcon}></img>
+            <img
+              className="menubar-image"
+              alt="Toggle Menu"
+              onClick={toggleMenuVisibility}
+              src={MenuIcon}
+            ></img>
             <img src={logo}></img>Event Management Admin
           </h1>
         </Link>

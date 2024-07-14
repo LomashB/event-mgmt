@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./../assets/css/login.css";
 import lockimg from "./../assets/images/icons8-lock.svg";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const [userId, setUserId] = useState("");
@@ -24,6 +25,10 @@ const Login = () => {
 
   return (
     <div className="contact-body">
+      <Helmet>
+        <title>Login Page | Harmony Event Management</title>
+      </Helmet>
+
       <div className="contact-form-body">
         <div
           className="contact-form"

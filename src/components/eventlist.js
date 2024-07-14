@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import events from "./data/eventdata";
 import "./../assets/css/eventlist.css";
+import { Helmet } from "react-helmet";
 
 const EventList = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   // Filter events based on the selected category
-  const filteredEvents = selectedCategory === "All"
-    ? events
-    : events.filter((event) => event.category === selectedCategory);
+  const filteredEvents =
+    selectedCategory === "All"
+      ? events
+      : events.filter((event) => event.category === selectedCategory);
 
   // Handle category selection
   const handleCategoryClick = (category) => {
@@ -18,6 +20,10 @@ const EventList = () => {
 
   return (
     <div className="event-list">
+      <Helmet>
+        <title>Events Page | Harmony Event Management</title>
+      </Helmet>
+
       <div className="top-sec-breadcrumb">
         <div>Our Events</div>
         <div>
@@ -87,7 +93,12 @@ const EventList = () => {
           </div>
         ) : (
           filteredEvents.map((event) => (
-            <div key={event.id} className="event-item" data-aos="fade-up" data-aos-duration="1500">
+            <div
+              key={event.id}
+              className="event-item"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
               <Link to={`/event/${event.id}?source=events`}>
                 <img src={event.image} alt={event.title} />
                 <div className="event-desc">

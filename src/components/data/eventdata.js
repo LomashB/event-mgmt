@@ -20,7 +20,6 @@ import image8b from "../../assets/images/event/4.event-grid.jpg";
 import image9b from "../../assets/images/event/5.event-grid.jpg";
 import image10b from "../../assets/images/event/6.event-grid.jpg";
 
-
 const events = [
   {
     id: 1,
@@ -30,7 +29,7 @@ const events = [
     category: "Wedding",
     description: `Experience a grand celebration with traditional rituals, colorful attire, and sumptuous feasts at the iconic Taj Mahal Palace Hotel. Enjoy the essence of Indian culture with music, dance, and ceremonies.`,
     image: image1,
-    image2: image1b
+    image2: image1b,
   },
   {
     id: 2,
@@ -40,7 +39,7 @@ const events = [
     category: "Wedding",
     description: `A night of dance, music, and fun at the Raj Palace. The Sangeet ceremony is a pre-wedding celebration where both families come together for an evening of performances and joy.`,
     image: image2,
-    image2: image2b
+    image2: image2b,
   },
   {
     id: 3,
@@ -50,7 +49,7 @@ const events = [
     category: "Sports",
     description: `Catch the excitement of a live cricket match at the M. Chinnaswamy Stadium. Watch India battle it out against Australia in this thrilling encounter that promises high adrenaline and intense competition.`,
     image: image3,
-    image2: image3b
+    image2: image3b,
   },
   {
     id: 4,
@@ -60,7 +59,7 @@ const events = [
     category: "Festival",
     description: `Celebrate the Festival of Lights with a vibrant cultural show at India Gate. Enjoy traditional dances, music, food stalls, and a grand fireworks display that illuminates the sky in this joyous event.`,
     image: image4,
-    image2: image4b
+    image2: image4b,
   },
   {
     id: 5,
@@ -70,7 +69,7 @@ const events = [
     category: "Religious",
     description: `Witness the mesmerizing Ganga Aarti at Dashashwamedh Ghat, where devotees gather to offer prayers to the holy river Ganges. The ceremony involves chants, lamps, and incense, creating a spiritual ambiance.`,
     image: image5,
-    image2: image5b
+    image2: image5b,
   },
   {
     id: 6,
@@ -80,7 +79,7 @@ const events = [
     category: "Workshop",
     description: `Join a dynamic Bollywood dance workshop at Danceworx, Bandra. Learn the latest moves and grooves from professional choreographers and immerse yourself in the vibrant world of Bollywood dance.`,
     image: image6,
-    image2: image6b
+    image2: image6b,
   },
   {
     id: 7,
@@ -90,7 +89,7 @@ const events = [
     category: "Festival",
     description: `Experience the grandeur of Durga Puja, a major Hindu festival, celebrated with elaborate decorations, cultural performances, and community feasts. Visit famous pandals and participate in the festivities.`,
     image: image7,
-    image2: image7b
+    image2: image7b,
   },
   {
     id: 8,
@@ -100,7 +99,7 @@ const events = [
     category: "Festival",
     description: `Celebrate Uttarayan, the International Kite Festival, where the skies of Ahmedabad are adorned with colorful kites of various shapes and sizes. Enjoy the spectacle and participate in kite flying competitions.`,
     image: image8,
-    image2: image8b
+    image2: image8b,
   },
   {
     id: 9,
@@ -110,7 +109,7 @@ const events = [
     category: "Cultural",
     description: `Immerse yourself in the rich cultural heritage of Rajasthan at the Mehrangarh Fort. Enjoy performances by local and international artists, showcasing traditional music, dance, and crafts.`,
     image: image9,
-    image2: image9b
+    image2: image9b,
   },
   {
     id: 1,
@@ -120,8 +119,8 @@ const events = [
     category: "Festival",
     description: `Join the lively and colorful Goa Carnival, featuring parades, dances, music, and food. Experience the unique blend of Indian and Portuguese cultures in this four-day celebration along the streets of Goa.`,
     image: image10,
-    image2: image10b
-  }
+    image2: image10b,
+  },
 ];
 
 export default events;

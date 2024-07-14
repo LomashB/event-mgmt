@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import './../../assets/css/addcategory.css';
+import React, { useState } from "react";
+import "./../../assets/css/addcategory.css";
+import { Helmet } from "react-helmet";
 
 const AddCategory = () => {
   const [categoryImage, setCategoryImage] = useState(null);
-  const [categoryName, setCategoryName] = useState('');
+  const [categoryName, setCategoryName] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add logic to handle form submission
-    console.log('Category added:', {
+    console.log("Category added:", {
       categoryImage,
       categoryName,
     });
@@ -20,14 +21,15 @@ const AddCategory = () => {
 
   return (
     <div className="add-category">
+      <Helmet>
+        <title>Add Category | Admin</title>
+      </Helmet>
+
       <h2>Add New Category</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Select an Image</label>
-          <input
-            type="file"
-            onChange={handleImageChange}
-          />
+          <input type="file" onChange={handleImageChange} />
         </div>
         <div className="form-group">
           <label>Category Name</label>

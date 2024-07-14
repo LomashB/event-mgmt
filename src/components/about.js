@@ -1,11 +1,20 @@
 import React from "react";
 import "./../assets/css/about.css";
 import JourneyImg from "./../assets/images/about/company-banner.png";
+import { Helmet } from "react-helmet";
 
 const about = () => {
   return (
     <div className="about-body">
-      <div className="top-sec-breadcrumb" data-aos="fade-up" data-aos-duration="1500">
+      <Helmet>
+        <title>About Page | Harmony Event Management</title>
+      </Helmet>
+
+      <div
+        className="top-sec-breadcrumb"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div>all you need to know </div>
         <div>
           about <span>harmoni</span>
@@ -51,7 +60,11 @@ const about = () => {
         </div>
       </div>
 
-      <div className="img-journey-sec" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        className="img-journey-sec"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div className="img-image">
           <img src={JourneyImg}></img>
         </div>
@@ -72,7 +85,11 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="topic-data"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -89,12 +106,16 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="topic-data"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
-                      Lorem ipsum, dolor sit  adipisicing elit.
-                      Sint dolorum, saepe sentium, quis vero recusandae
-                      neque, inventore odit iure fuga reiciendis in ab.
+                      Lorem ipsum, dolor sit adipisicing elit. Sint dolorum,
+                      saepe sentium, quis vero recusandae neque, inventore odit
+                      iure fuga reiciendis in ab.
                     </p>
                   </div>
                 </div>{" "}
@@ -106,12 +127,16 @@ const about = () => {
                     </div>
                   </div>
 
-                  <div className="topic-data" data-aos="fade-up" data-aos-duration="1500">
+                  <div
+                    className="topic-data"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                  >
                     <h3>1st Place for Unique Events 2018</h3>
                     <p>
-                      Lorem iit amet conselit.
-                      Sint dolorum, saepe , quis vero recusandae
-                      neque, inventore odit iure fuga reiciendis in ab.
+                      Lorem iit amet conselit. Sint dolorum, saepe , quis vero
+                      recusandae neque, inventore odit iure fuga reiciendis in
+                      ab.
                     </p>
                   </div>
                 </div>

@@ -3,6 +3,7 @@ import { useParams, useLocation, Link } from "react-router-dom";
 import events from "./data/eventdata";
 import myBookings from "./data/mybookingdata";
 import "../assets/css/eventdetail.css";
+import { Helmet } from "react-helmet";
 
 const EventDetail = () => {
   const { eventId } = useParams();
@@ -28,9 +29,17 @@ const EventDetail = () => {
 
   return (
     <div className="event-detail" data-aos="fade-up" data-aos-duration="1500">
+      <Helmet>
+        <title>{event.title} | Harmony Event Management</title>
+      </Helmet>
+
       <div>
         <div className="event-dtl-img">
-          <img src={event.image2} alt={event.title} className="event-detail-image" />
+          <img
+            src={event.image2}
+            alt={event.title}
+            className="event-detail-image"
+          />
         </div>
         <div className="event-dtl-desc">
           <h1>{event.title}</h1>
@@ -45,7 +54,11 @@ const EventDetail = () => {
         </div>
       </div>
       <div className="get-start"></div>
-      <div className="get-start-section" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        className="get-start-section"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div>
           <div>Request Early access to get started!</div>
           <div>Register today & start exploring the endless possibilities!</div>
