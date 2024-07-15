@@ -56,7 +56,7 @@
   border-radius: 5px;
   font-size: 13px;
   font-weight: 600;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .unblock-button:hover {
