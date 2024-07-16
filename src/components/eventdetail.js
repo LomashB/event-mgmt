@@ -9,7 +9,6 @@ const EventDetail = () => {
   const { eventId } = useParams();
   const location = useLocation();
 
-  // Function to get query parameters
   const getQueryParams = (search) => {
     return new URLSearchParams(search);
   };
